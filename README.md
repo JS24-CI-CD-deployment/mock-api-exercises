@@ -10,3 +10,30 @@ Instruktioner och user stories hittar ni här: https://gist.github.com/zocom-chr
 ### Swing notes
 
 Skriv unit tester och mocka API:et för Swing notes. Du hittar koden i mappen `swing notes`.
+
+Exempel på svar från API:et när man hämtar anteckningar:
+```js
+{
+  notes: [
+    {
+      createdAt: "5/23/2024",
+      id: "US0oobQukoiu8C8qmQxyM",
+      note: "Min första anteckning",
+      title: "Första anteckningen",
+      username: "ada",
+    },
+    {
+      createdAt: "5/23/2024",
+      id: "_2FbzPa1QS9Pxjn4lvI7_",
+      note: "Min andra anteckning",
+      title: "Andra anteckningen",
+      username: "ada",
+    },
+  ],
+};
+```
+
+När man skapar en ny eller tar bort:
+```js
+{ success: true, message: "Note deleted" }
+```
